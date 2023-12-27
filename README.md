@@ -7,7 +7,7 @@ evaluation data of multimodal shopping system
 It consists 12 conversations, 27 cake matching tasks and 66 conversation rounds that are obtained by manual labeling. 
 
 It is in Chinese because the system is built for native Chinese users.
-## Evaluation data of multimodal fusion method
+## data for multimodal fusion method
 ### fusion data of test set
 - ./test set for fusion/multi_data.npy: array type; shape: (N,5,3). N=2000.
 
@@ -27,7 +27,12 @@ It is in Chinese because the system is built for native Chinese users.
 ./test set for fusion/multi_data5.npy; ./test set for fusion/multi_label5.npy
 
  It is worth noting that the tests mentioned in the paper used only half of these that randomly selected.
-  
+
+### fusion data of train set
+./mm fusion trainset/mm_train_data.npy
+./mm fusion trainset/mm_train_label.npy
+
+Data format is identical to the test set. The training set has a total of 5000 multimodal data containing 80 0-modals (data with 0 modalities is valid), 309 1-modals (data with only 1 modalities is valid), 1005 2-modals, 1745 3-modals, 1439 4-modals, 462 5-modals. 
 ### user-based evaluation data 
 - ./fusion methods on test set/multi_data_user.npy: array type; shape: (N,5,3). N=20.
   
