@@ -30,6 +30,7 @@ It is in Chinese because the system is built for native Chinese users.
 
 ### fusion data of train set
 ./mm fusion trainset/mm_train_data.npy
+
 ./mm fusion trainset/mm_train_label.npy
 
 Data format is identical to the test set. The training set has a total of 5000 multimodal data containing 80 0-modals (data with 0 modalities is valid), 309 1-modals (data with only 1 modalities is valid), 1005 2-modals, 1745 3-modals, 1439 4-modals, 462 5-modals. 
